@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Hashira Fichas — Entrar / Registrar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="center">
+    <div class="card">
+      <h1>Hashira Fichas</h1>
+      <p class="muted">Entre com sua conta ou crie uma nova (nome único + email + senha ≥ 8).</p>
+
+      <div id="authForms">
+        <div id="loginForm">
+          <h2>Entrar</h2>
+          <input id="loginEmail" placeholder="Email" type="email">
+          <input id="loginPassword" placeholder="Senha" type="password">
+          <button id="btnLogin" class="btn">Entrar</button>
+        </div>
+
+        <hr>
+
+        <div id="registerForm">
+          <h2>Criar conta</h2>
+          <input id="regName" placeholder="Nome de usuário (único)" type="text">
+          <input id="regEmail" placeholder="Email" type="email">
+          <input id="regPassword" placeholder="Senha (mínimo 8)" type="password">
+          <button id="btnRegister" class="btn">Criar conta</button>
+        </div>
+      </div>
+
+      <div id="messages"></div>
+    </div>
+  </main>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

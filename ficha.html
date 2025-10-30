@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Hashira Ficha — Editor Completo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">HH — Editor</div>
+    <div><button id="btnBack" class="btn ghost">Voltar</button></div>
+  </header>
+
+  <main class="wrap">
+    <h2 id="formTitle">Nova Ficha</h2>
+    <form id="fichaForm">
+      <label>Título da Ficha<input id="title" type="text" /></label>
+      <label>Nome do Jogador<input id="playerName" type="text" /></label>
+      <label>Nome do Personagem<input id="characterName" type="text" /></label>
+      <label>Classe / Nível<input id="ClassLevel" type="text" /></label>
+      <label>Raça<input id="Race" type="text" /></label>
+      <label>Alinhamento<input id="Alignment" type="text" /></label>
+
+      <div class="row">
+        <label>STR<input id="STR" type="number" value="10"></label>
+        <label>DEX<input id="DEX" type="number" value="10"></label>
+        <label>CON<input id="CON" type="number" value="10"></label>
+        <label>INT<input id="INT" type="number" value="10"></label>
+        <label>WIS<input id="WIS" type="number" value="10"></label>
+        <label>CHA<input id="CHA" type="number" value="10"></label>
+      </div>
+
+      <label>PV Máximo<input id="HPMax" type="number"></label>
+      <label>PV Atual<input id="HPAtual" type="number"></label>
+
+      <label>Equipamentos<textarea id="Equipment"></textarea></label>
+      <label>Proficiencias / Idiomas<input id="ProficienciesLang" type="text"></label>
+      <label>Características / Traços<textarea id="features"></textarea></label>
+      <label>História<textarea id="backstory"></textarea></label>
+
+      <div class="actions">
+        <button id="btnSave" class="btn">Finalizar ficha</button>
+        <button id="btnDelete" class="btn ghost" type="button">Excluir</button>
+      </div>
+    </form>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
